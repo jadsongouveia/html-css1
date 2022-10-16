@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site de formulário</title>
+    <style>
+        body {
+            background-color: rgb(213, 209, 209);
+        }
+
+        div {
+            padding: 250px;
+            position: fixed;
+
+        }
+
+        div > fieldset > h1 {
+            text-align: center;
+            color:rgb(54, 54, 157);
+    
+        }
+
+        div > fieldset { 
+            background-color: white;
+        }
+
+        #bola {
+            width: 95%;
+            padding: 5px;
+            border-radius: 5px;
+            color: white;
+            background-color: blue;
+            border: none;
+           
+        }
+
+    </style>
+</head>
+<body>
+   <div>
+       <fieldset>
+           <h1>Login</h1>
+           <form action="cadastro.php" method="get">
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" required>
+            </p>
+            <p>
+                <label for="isenha">Senha</label>
+                <input type="password" name="senha" id="isenha" required>
+            </p>
+            <p>
+                <label for="idata">Data de Nascimento</label>
+                <input type="date" name="data" id="idata" required>
+            </p>
+            <input id="bola" type="submit" value="Logar">
+           
+           </form>
+       </fieldset>
+   </div>
+</body>
+</html>
