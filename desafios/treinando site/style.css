@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    background-color:  rgba(0, 0, 0,0.8);
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+div{
+    width: 150px;
+    height: 250px;
+    background-color: aqua;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    transform: rotate(-5deg) skew(20deg);
+    transition: all 0.5s;
+}
+
+div:hover{
+    transform: perspective(5) ;
+    transform: rotate(-5deg) scale(1.1) skew(20deg);
+    box-shadow: 0px 0px 20px aqua;
+    
+}
